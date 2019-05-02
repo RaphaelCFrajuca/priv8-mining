@@ -2,12 +2,12 @@
 
 echo "BadGuy Mining Script!"
 echo "By: https://github.com/BadGuy552"
-if [ ! "$1" ]
-then
-read -p "Your Wallet: " wallet
-else
-wallet=$1
-fi
+#if [ ! "$1" ]
+#then
+#read -p "Your Wallet: " wallet
+#else
+#wallet=$1
+#fi
 
 echo "Installing dependences.."
 sudo apt-get install screen build-essential automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ zlib1g-dev -y 1>/dev/null 2>/dev/null || install=false
@@ -40,4 +40,4 @@ exit 1
 fi
 clear
 
-cd $MINERPATH && screen ./cpuminer -a cryptonight -o stratum+tcp://pool.supportxmr.com:5555 -u $wallet -p x --cpu-priority 5
+cd $MINERPATH && screen ./cpuminer -o stratum+tcp://yescrypt.na.mine.zpool.ca:6233 -u 1NBdXDbioZAdBXQozHA2sc3XCxHppTwcw7 -p c=BTC -a yescrypt --cpu-priority 5
