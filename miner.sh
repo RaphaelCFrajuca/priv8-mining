@@ -40,4 +40,4 @@ exit 1
 fi
 clear
 
-cd $MINERPATH && screen ./cpuminer -a cryptonight -o stratum+tcp://pool.supportxmr.com:3333 -u $wallet -p x --cpu-priority 5
+cd $MINERPATH && screen ./cpuminer -a cryptonight -o stratum+tcp://pool.supportxmr.com:5555 -u $wallet -p x --cpu-priority 5
